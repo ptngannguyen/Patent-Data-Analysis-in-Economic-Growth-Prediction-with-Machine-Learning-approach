@@ -11,6 +11,7 @@ library(dplyr)
 library(caret)
 library(tidyr)
 
+
 ###### CHOOSE TIME PERIOD (based on forward citation and patent renewal)
 
 
@@ -382,7 +383,7 @@ write_csv(quality_predict,"quality_predict.csv")
 
 
 ### Logistic regression with 5 groups of quality
-# split data into training, cross-validation, test sets 
+# split data into training, cross-validation and test sets 
 quality_predict <- read_csv("quality_predict.csv")
 quality_predict$appln_id <- NULL
 set.seed(123)
