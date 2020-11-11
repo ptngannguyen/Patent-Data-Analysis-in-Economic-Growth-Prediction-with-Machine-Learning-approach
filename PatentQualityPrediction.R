@@ -612,7 +612,7 @@ par(mfrow=c(1,1))
 plot(quality_plot[, c(2,3)], col=quality_plot$quality_group)
 
 ### Logistic Regression 2 levels
-# split data into training, cross-validation, test sets according to ratio 9:0.5:0.5
+# split data into training, cross-validation, and test sets according to ratio 9:0.5:0.5
 quality_predict$appln_id <- NULL
 set.seed(123)
 spec = c(train = .9, test = .05, validate = .05)
